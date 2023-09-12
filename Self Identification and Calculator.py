@@ -4,7 +4,7 @@ print('Self Identification')
 name = input('Enter your name:')
 age = input('Enter your age:')
 country = input('Country: ')
-country = country.lower()  
+country = country.lower()
 country_codes = {
     'america': '+1',
     'philippines': '+63',
@@ -128,33 +128,42 @@ address = input('Please enter your current address:')
 contact = int(input('Please enter your mobile number:' + countcode))
 print('Hello ' + name + ', You are ' + age + ' years old ' + 'and currently residing at ' +
       address + ' and your contact number is ' + countcode + str(contact) + '.')
-#Code Number two
+# Code Number two
 print('Calculator')
 while True:
     try:
         operation = input(
-            'Select an operation\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\nYour selection: ')
+            'Select an operation'
+            '\n1.Addition'
+            '\n2.Subtraction'
+            '\n3.Multiplication'
+            '\n4.Division'
+            '\nYour selection: ')
 
         if operation == '1':
-            c1 = input('Please put 2 if 2 digits and 3 if 3 digits \nYour Answer: ')
+            c1 = input(
+                'Please put 2 if 2 digits and 3 if 3 digits \nYour Answer: ')
             if c1 == '2':
                 x = input('Enter first number: ')
                 y = input('Enter second number: ')
                 sum1 = int(x) + int(y)
-                print('The sum of ' + x + ' and ' + y + ' is ' + str(sum1) + '.')
+                print('The sum of ' + x + ' and ' +
+                      y + ' is ' + str(sum1) + '.')
             elif c1 == '3':
                 x = input('Enter first number: ')
                 y = input('Enter second number: ')
                 z = input('Enter third number: ')
                 sum2 = int(x) + int(y) + int(z)
-                print('The sum of ' + x + ', ' + y + ' and ' + z + ' is ' + str(sum2) + '.')
+                print('The sum of ' + x + ', ' + y +
+                      ' and ' + z + ' is ' + str(sum2) + '.')
             else:
                 print("You've entered a wrong choice.")
         elif operation == '2':
             x = input('Enter first number: ')
             y = input('Enter second number: ')
             difference = int(x) - int(y)
-            print('The difference of ' + x + ' and ' + y + ' is ' + str(difference))
+            print('The difference of ' + x + ' and ' +
+                  y + ' is ' + str(difference))
         elif operation == '3':
             x = input('Enter first number: ')
             y = input('Enter second number: ')
@@ -167,7 +176,8 @@ while True:
                 print("Division by zero is not allowed.")
             else:
                 quotient = int(x) / int(y)
-                print('The quotient of ' + x + ' and ' + y + ' is ' + str(quotient))
+                print('The quotient of ' + x + ' and ' +
+                      y + ' is ' + str(quotient))
         else:
             print("You've entered a wrong choice")
 
