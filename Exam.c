@@ -49,7 +49,7 @@ int main() {
     scanf(" %c", &answer);
     answer = toupper(answer); // Convert input to uppercase
     
-    if (answer == 'A') {
+    if (answer == 'B') {
         sleep(2);
         score++;
     } else {
